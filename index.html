@@ -4,101 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <title>Mi Portafolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body id="fondo" background="https://images4.alphacoders.com/715/thumb-1920-71578.jpg">
 
+    <!-- =============== NAVBAR ================================================= -->
     <header>
         <section id="navBar">
             <div class="container-fluid">
-                <ul class="nav">
-                    <img src="./assets/people_15474869.png" alt="Logo" width="30" height="24"
-                        class="d-inline-block align-text-top">
+                <ul class="nav align-items-center">
+                    <img src="./assets/people_15474869.png" alt="Logo" width="30" height="24" class="me-2">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Arturo Diaz</a>
+                        <a class="nav-link active fw-bold" href="#inicio">Arturo Diaz</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="./portafolio.html">Portafolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./acercaDe.html">Acerca de mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Blog</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#acerca">Acerca de mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
-        </section><!--navBar-->
+        </section>
     </header>
 
-    <section class="container">
-        <h2 id="textPri">¡Bienvenido a mi Portafolio!</h2>
-        <p id="textPri">Soy un desarrollador Full Stack Junior con especial interés en el desarrollo Frontend. Inicié
-            mis estudios en
-            Ingeniería Mecánica Industrial en el IPN y posteriormente cursé la Licenciatura en Comercio Internacional,
-            lo que fortaleció mi pensamiento lógico, enfoque analítico y capacidad de gestión.
-            Mi trayectoria profesional se ha desarrollado mayormente en el área financiera, donde durante varios años
-            adquirí experiencia en procesos operativos, análisis y cumplimiento de objetivos, habilidades que ahora
-            aplico al desarrollo tecnológico.
 
-            Actualmente enfoco mi desarrollo profecional en la programación, utilizando HTML, CSS, JavaScript y Java,
-            además de fundamentos
-            en Python y manejo de Git/GitHub para control de versiones y trabajo colaborativo.
-            Me motiva crear páginas funcionales y atractivas, optimizando la experiencia del usuario y
-            fortaleciendo mis habilidades continuar creciendo como Full-Stack.</p>
+    <section id="inicio" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 id="textPri">¡Bienvenido a mi Portafolio!</h2>
+
+                <p id="textPri">
+                    Soy un desarrollador Full Stack Junior con especial interés en el desarrollo Frontend. Inicié mis
+                    estudios en Ingeniería Mecánica Industrial en el IPN y posteriormente cursé la Licenciatura en
+                    Comercio Internacional, lo que fortaleció mi pensamiento lógico, enfoque analítico y capacidad de
+                    gestión. Mi trayectoria profesional se ha desarrollado mayormente en el área financiera, donde
+                    durante
+                    varios años adquirí experiencia en procesos operativos, análisis y cumplimiento de objetivos,
+                    habilidades que ahora aplico al desarrollo tecnológico.
+                    <br><br>
+                    Actualmente me enfoco en el desarrollo web utilizando HTML, CSS, JavaScript, Java, fundamentos de
+                    Python y Git/GitHub para control de versiones y trabajo colaborativo.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img id="imgInicio" src="./assets/image ofpgra.png" class="img-fluid" style="max-width: 300px;">
+            </div>
+        </div>
     </section>
-    <img id="imgInicio" src="./assets/image ofpgra.png" width="600"></img>
 
-    <section id="textPri" class="container">
-        <h3>📩 Contacto</h3>
+
+    <section id="textPri" class="container py-5 row align-items-center">
+        <h3>Acerca de mí</h3>
+        <p>
+            Soy una persona autodidacta, disciplinada y apasionada por la tecnología. Me gusta aprender nuevas
+            herramientas, enfrentar retos y desarrollar soluciones eficientes. Mi objetivo es crecer profesionalmente en
+            el desarrollo web.
+        </p>
+    </section>
+
+    <section id="habilidadesclass=" container py-5 text-center">
+        <h3 class="fw-bold mb-4">Lenguajes y Tecnologías</h3>
+
+        <div class="row row-cols-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="p-3 bg-dark text-white rounded">HTML</div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-dark text-white rounded">CSS</div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-dark text-white rounded">JavaScript</div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-dark text-white rounded">Java</div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-dark text-white rounded">Python (básico)</div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-dark text-white rounded">Git / GitHub</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portafolio" class="container py-5">
+        <h3 class="fw-bold mb-4 text-center">Mis Proyectos</h3>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+
+
+            <div class="col">
+                <div class="card p-3">
+                    <img src="./assets/proyecto1.png" class="card-img-top" alt="proyecto1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <p class="card-text">Descripción breve de tu proyecto número 1.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card p-3">
+                    <img src="./assets/proyecto2.png" class="card-img-top" alt="proyecto2">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2</h5>
+                        <p class="card-text">Descripción breve del proyecto número 2.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card p-3">
+                    <img src="./assets/proyecto3.png" class="card-img-top" alt="proyecto3">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 3</h5>
+                        <p class="card-text">Descripción del proyecto número 3.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card p-3">
+                    <img src="./assets/proyecto4.png" class="card-img-top" alt="proyecto4">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 4</h5>
+                        <p class="card-text">Descripción del proyecto número 4.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="textPri" class="container py-5">
+        <h3 class="fw-bold">📩 Contacto</h3>
+
         <ul>
-            <li>Email: arturo.diaaz97@gmail.com</li>
-            <li>GitHub: https://github.com/ArturoDza</li>
-            <li>LinkedIn: https://www.linkedin.com/in/arturo-diaz-anaya-1b5258284/</li>
+            <li>Email: <strong>arturo.diaaz97@gmail.com</strong></li>
+            <li>GitHub: <a href="https://github.com/ArturoDza">github.com/ArturoDza</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/arturo-diaz-anaya-1b5258284/">Mi Perfil</a></li>
         </ul>
-    </section>
+    </section>Contacto
+
 
     <footer class="text-center text-white">
-        <!-- Grid container -->
         <div class="container pt-4">
-            <!-- Section: Social media -->
             <section class="mb-4">
-                <!-- Facebook -->
-                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><img src="./assets/icons8-facebook-50.png"></i></a>
-
-                <!-- Linkedin -->
-                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-dark m-1"
-                    href="https://www.linkedin.com/in/arturo-diaz-anaya-1b5258284/" role="button"
-                    data-mdb-ripple-color="dark"><img src="./assets/icons8-linkedin-50.png"></i></a>
-
-                <!-- GitHub -->
-                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-dark m-1"
-                    href="https://github.com/ArturoDza" role="button" data-mdb-ripple-color="dark"><img
-                        src="./assets/github.png" width="50"></img></a>
-
-                <!-- Instagram -->
-                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1"><img
+                        src="./assets/icons8-facebook-50.png"></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="https://www.linkedin.com/in/arturo-diaz-anaya-1b5258284/"><img
+                        src="./assets/icons8-linkedin-50.png"></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/ArturoDza"><img
+                        src="./assets/github.png" width="50"></a>
             </section>
-
         </div>
+
         <div class="text-center text-dark p-3" style="background-color: rgba(249, 246, 246, 0.2);">
-            © 2025
-            <a class="text-white" href="#">Arturo Diaz</a>
+            © 2025 <a class="text-white" href="#">Arturo Diaz</a>
         </div>
-
     </footer>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </body>
 
 </html>
