@@ -39,3 +39,15 @@ footer{
 #fondo{
     background-attachment: fixed;
 }
+.cardLenguaje {
+    background: #1f1f1f;
+    color: white;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cardLenguaje:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
